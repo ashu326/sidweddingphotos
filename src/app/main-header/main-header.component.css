@@ -1,0 +1,55 @@
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 576px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+.mat-toolbar a {
+  display: inline-block;
+  margin: 0 10px;
+  color: white;
+  text-decoration: none;
+}
+
+/* .mat-nav-list {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 2rem;
+  display: block;
+  color: black;
+  padding: 70px 100px;
+  text-decoration: none;
+} */
+
+.container {
+  padding: 180px 160px 0px 160px;
+}
+
+.container a {
+  font-family: Georgia;
+  font-size: 28px;
+  color: black;
+}
+
+.icons {
+  padding: 50px 160px;
+}

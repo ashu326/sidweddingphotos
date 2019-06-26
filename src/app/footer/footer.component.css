@@ -1,0 +1,30 @@
+.footer {
+    max-width: 100%;
+    background-color: black;
+    padding: 100px 100px;
+    opacity: 20%;
+}
+.about {
+    padding: 0px 15px;
+}
+
+.book {
+    padding: 0px 15px;
+}
+
+.copyright {
+    padding: 0px 15px;
+}
+p {
+    font-family: Helvetica;
+    font-size: 15px;
+    color: #888888;
+    margin: 12px 0px;
+}
+
+a {
+    font-family: Helvetica;
+    font-size: 15px;
+    color: white;
+    margin: 20px 0px 0px;
+}

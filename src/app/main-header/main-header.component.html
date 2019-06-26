@@ -1,0 +1,46 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [opened]="opened">
+    
+    <mat-toolbar>
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">clear</mat-icon>
+      </button>
+    </mat-toolbar>
+    <mat-nav-list>
+      <div class="container">
+        <a mat-list-item href="#">Home</a>
+        <a mat-list-item href="#">Blog</a>
+        <a mat-list-item href="#">Portfolio</a>
+        <a mat-list-item href="#">Book Us Now</a>
+      </div>
+      <div class="icons">
+        <a href="#"><i class="fab fa-facebook-f fa-2x" style="margin-left: 15%; color: blue"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-2x" style="margin-left: 10%; color: orange"></i></a>
+      </div>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content class="header">
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span align="center">SIDWEDDINGPHOTOS</span>
+      <span class="spacer"></span>
+      <a href="#"><i class="fab fa-facebook-f" style="color: blue"></i></a>
+      <a href="#"><i class="fab fa-instagram" style="color: orange"></i></a>
+      <!-- <a mat-list-item href="#">Link 1</a> -->
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <ng-content></ng-content>
+  </mat-sidenav-content>
+</mat-sidenav-container>
